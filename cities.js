@@ -28,6 +28,12 @@ let currentCity = "";
 let currentUnit = "c";
 let hourlyorWeek = "week";
 
+function keypress(event) {
+  if(event.key === "Enter"){
+    getWeatherData(search.value, currentUnit, hourlyorWeek);
+  }
+}
+
 // function to get date and time
 function getDateTime() {
   let now = new Date(),
@@ -119,7 +125,7 @@ function getWeatherData(city, unit, hourlyorWeek) {
       sunSet.innerText = covertTimeTo12HourFormat(today.sunset);
     })
     .catch((err) => {
-      alert("City not found in our database");
+      alert("Something went Wrong! 😩");
     });
 }
 
@@ -306,6 +312,7 @@ function updateAirQualityStatus(airquality) {
   }
 }
 
+
 // function to handle search form
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -459,6 +466,7 @@ function changeTimeSpan(unit) {
     getWeatherData(currentCity, currentUnit, hourlyorWeek);
   }
 }
+
 
 
 
