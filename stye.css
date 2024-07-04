@@ -325,10 +325,12 @@ img {
 
 @media (max-width:545px) {
   .wrapper{
-    height: 2500px;
+    height: auto;
   }
   .main{
-    height: 2200px;
+    height: auto;
+    padding-bottom: 7rem;
+
   }
   .sidebar{
     width: 100%;
@@ -356,7 +358,6 @@ img {
   
 }
 .card2 {
-  /* width: 90%; */
   align-items:center;
 }
 
