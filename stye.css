@@ -291,20 +291,24 @@ img {
    body{
     padding: 10px;
    }
-
-  .wrapper{
-    width: 100%;
+   .wrapper{
+    height: auto;
   }
+  .main{
+
+    padding: 24px 54px 7em 12px;
+    }
+
 }
 
  @media (max-width:650px) {
   .wrapper{
-    height: 1900px;
+    height: auto;
   }
   .main{
-  padding: 24px 54px 0 12px;
 
-  }
+    padding: 24px 54px 7em 12px;
+    }
 
   .main nav{
    position: absolute;
